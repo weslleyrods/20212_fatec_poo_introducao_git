@@ -5,6 +5,24 @@ public class Empregado{
     //private é um modificador de acesso, que  cria um encapsulamento da variavel, para outra variavel não ter acesso
     private String nome;
     private int idade;
+    private int tipo;
+    private double salario;
+    private double comissao;
+    private double bonus;
+
+    oublic double calculaSalario(){
+        if (tipo == 1){
+            return salario;
+        }
+        else if (tipo == 2){
+            return salario + salario * comissao;
+        }
+        else if (tipo == 3){
+            return salario + bonus;
+        }
+        return 0;
+    }
+
 
     //método/função para acesso das váriaveis acima por meio indireto
     //setName escrito em pad~rao camel case
