@@ -10,7 +10,28 @@ public class Empregado{
     private double comissao;
     private double bonus;
 
-    oublic double calculaSalario(){
+    //os metodos abaixo nao precisaram do get, porque nao precisaram do previlegio de leitura
+    //como os demais
+    public void setSalario(double salario){
+        this.salario = salario;
+    }
+    public void setComissao(double comissao){
+        this.comissao = comissao;
+    }
+    public void setBonus (double bonus){
+        this.bonus = bonus;
+    }
+
+    //metodo p/ a variavel tipo ser acessada no TesteEmpregado
+    //porque a variavel esta como private
+    public void setTipo (int tipo){
+        this.tipo = tipo;
+    }
+    public int getTipo(){
+        return this.tipo;
+    }
+
+    public double calculaSalario(){
         if (tipo == 1){
             return salario;
         }
