@@ -1,0 +1,5 @@
+Empregado.class
+TesteEmpregado.class
+
+//ignora todos os arquivos compostos por .class
+*.class
